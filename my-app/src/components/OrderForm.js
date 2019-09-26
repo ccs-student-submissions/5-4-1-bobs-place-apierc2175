@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col, Grid, Container } from 'react-bootstrap';
 
 class OrderForm extends Component {
 

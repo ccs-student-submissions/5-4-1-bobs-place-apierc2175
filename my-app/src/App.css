@@ -26,15 +26,16 @@ section {
 
 section.order-form {
   background-color: #ccc;
-  width: 20%;
+  height: 245px;
+  margin-top: 10px;
 }
 
 section.contact-form {
   background-color: #ccc;
-  width: 20%;
+  height: 245px;
 }
 
 section.menu-list {
   background-color: #ccc;
-  width: 20%;
+  height: 500px;
 }

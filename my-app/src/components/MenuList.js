@@ -14,7 +14,9 @@ class MenuList extends Component {
 
   render() {
     return (
-      <h2>Menu List</h2>
+      <section className="menu-list">
+        <h2>Menu List</h2>
+      </section>
     )
   }
 }

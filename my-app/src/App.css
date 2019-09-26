@@ -22,7 +22,16 @@
 }
 
 section {
-  position: absolute;
+}
+
+section.order-form {
   background-color: #ccc;
-  height: 80%;
+}
+
+section.contact-form {
+  background-color: #ccc;
+}
+
+section.menu-list {
+  background-color: #ccc;
 }

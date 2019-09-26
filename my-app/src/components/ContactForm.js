@@ -14,7 +14,9 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <h2>Contact Form</h2>
+      <section className="contact-form">
+        <h2>Contact Form</h2>
+      </section>
     )
   }
 }

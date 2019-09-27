@@ -37,5 +37,16 @@ section.contact-form {
 
 section.menu-list {
   background-color: #ccc;
-  height: 600px;
+}
+
+span.price {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+li.menu-item-name {
+  font-size: 22px;
 }

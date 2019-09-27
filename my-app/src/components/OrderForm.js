@@ -19,7 +19,7 @@ class OrderForm extends Component {
 
     let orderItems = this.props.orderItems.map((item, index) => (
       <div key={index}>
-        <h1>{item.name}</h1>
+        <p>{item.name}</p>
         <h1>{item.description}</h1>
         <h1>{item.price}</h1>
       </div>

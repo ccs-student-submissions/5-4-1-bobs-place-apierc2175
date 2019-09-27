@@ -16,9 +16,18 @@ class OrderForm extends Component {
 
 
   render() {
+
+    let orderItems = this.props.orderItems.map((item, index) => (
+      <div key={index}>
+        <h1>{item.name}</h1>
+        <h1>{item.description}</h1>
+        <h1>{item.price}</h1>
+      </div>
+    ));
     return (
       <section className="order-form">
         <h2>Order Form</h2>
+        {orderItems}
       </section>
     )
   }

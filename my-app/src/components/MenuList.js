@@ -8,28 +8,32 @@ class MenuList extends Component {
     super(props);
 
     this.state = {
-      menuItem: '',
-      itemPrice: ''
+      name: '',
+      description: '',
+      price: ''
     };
-    this.addItem = this.addItem.bind(this);
   }
 
-  addItem(item) {
-    console.log(this.state.menuItem);
-  }
+  // addItem(item) {
+  //   // console.log(image);
+  //   let items = [this.state];
+  //   items.push(item);
+  //   this.setState({items: items});
+  //   console.log(items);
+  // }
 
 
   render() {
-    let menuItems = this.props.menuItems.map((menuItem, index) => (
+    let menuItems = this.props.menuItems.map((item, index) => (
       <tr>
         <td>
           <ul>
-            <li className="menu-item-name">{menuItem.name}</li>
-            <li>{menuItem.description}</li>
-            <li><button onClick={this.addItem}>Add To Order</button></li>
+            <li className="menu-item-name">{item.name}</li>
+            <li>{item.description}</li>
+            <li><button onClick={() => this.props.addToCart(item)}>Add To Order</button></li>
           </ul>
         </td>
-        <td>${menuItem.price}</td>
+        <td>${item.price}</td>
       </tr>
     ))
     return (

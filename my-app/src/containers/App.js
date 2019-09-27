@@ -13,17 +13,25 @@ class App extends Component {
     super(props)
     this.state = {
       menuItems: [],
-      orderItems: []
+      orderItems: [],
+      subtotal: 0
     }
+    this.addToCart = this.addToCart.bind(this);
   }
 
   componentDidMount() {
-    let menuItems = [{name: 'Menu Item One', description: 'here is a description', price: 2}, {name: 'Menu Item Two', description: 'here is a description', price: 2}, {name: 'Menu Item Three', description: 'here is a description', price: 2}, {name: 'Menu Item four', description: 'here is a description', price: 2}];
+    let menuItems = [{name: 'Menu Item One', description: 'here is a description', price: 2}, {name: 'Menu Item Two', description: 'here is a description', price: 3}, {name: 'Menu Item Three', description: 'here is a description', price: 4}, {name: 'Menu Item four', description: 'here is a description', price: 2}];
     this.setState({menuItems: menuItems});
   }
 
   addToCart(item) {
     // here is where you need to add the item to the cart
+    let items = [...this.state.orderItems];
+    items.push(item);
+    this.setState((prevState, props) => ({
+      orderItems: items,
+      subtotal: prevState.subtotal + item.price
+    }));
   }
 
   render() {
@@ -33,10 +41,10 @@ class App extends Component {
           <h1 className="text-primary">Aidan's Place</h1>
         <Row>
           <Col xs="6">
-            <MenuList menuItems={this.state.menuItems}/>
+            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart}/>
           </Col>
           <Col xs="6">
-            <OrderForm orderItems={this.state.order}/>
+            <OrderForm orderItems={this.state.orderItems}/>
             <ContactForm />
           </Col>
         </Row>

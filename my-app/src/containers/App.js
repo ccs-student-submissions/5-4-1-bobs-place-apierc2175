@@ -37,13 +37,16 @@ class App extends Component {
   }
 
   removeFromCart(item) {
-    let items = [...this.state.orderItems];
-    let index = items.indexOf(item);
-    items.splice(index, 1);
-    this.setState((prevState, props) => ({
-      orderItems: items,
-      subtotal: prevState.subtotal - item.price
-    }));
+
+    if(this.state.subtotal > 0) {
+      let items = [...this.state.orderItems];
+      let index = items.indexOf(item);
+      items.splice(index, 1);
+      this.setState((prevState, props) => ({
+        orderItems: items,
+        subtotal: prevState.subtotal - item.price
+      }));
+    }
   }
 
   submitOrder() {

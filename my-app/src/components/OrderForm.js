@@ -39,7 +39,7 @@ class OrderForm extends Component {
             {orderItems}
           </tbody>
         </Table>
-        <p>{this.props.subtotal}</p>
+        <p>${this.props.subtotal}.00</p>
         <a href="#"><button className="btn btn-primary sub-btn" onClick={() => this.props.submitOrder()}>Submit Order</button></a>
       </section>
     )

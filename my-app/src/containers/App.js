@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let menuItems = [{name: 'Menu Item One', description: 'here is a description', price: 2, }, {name: 'Menu Item Two', description: 'here is a description', price: 3}, {name: 'Menu Item Three', description: 'here is a description', price: 4}, {name: 'Menu Item four', description: 'here is a description', price: 2}];
+    let menuItems = [{name: 'Coleslaw', description: 'here is a description', price: 2, }, {name: 'Menu Item Two', description: 'here is a description', price: 3}, {name: 'Menu Item Three', description: 'here is a description', price: 4}, {name: 'Menu Item four', description: 'here is a description', price: 2}];
     this.setState({menuItems: menuItems});
   }
 

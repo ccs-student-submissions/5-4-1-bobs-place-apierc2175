@@ -25,17 +25,17 @@ section {
 }
 
 section.order-form {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 section.contact-form {
-  background-color: #ccc;
+  background-color: #ddd;
   height: 295px;
   margin-top: 10px;
 }
 
 section.menu-list {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 span.price {
@@ -59,4 +59,12 @@ button.sub-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+body {
+  background-color: #333;
+}
+
+:hover {
+  text-decoration: none !important;
 }

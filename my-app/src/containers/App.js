@@ -48,6 +48,7 @@ class App extends Component {
 
   submitOrder() {
     alert("Thank you for your order! It has been submitted!");
+    window.location.reload();
   }
 
   render() {
@@ -57,10 +58,10 @@ class App extends Component {
           <h1 className="text-primary">Aidan's Place</h1>
         <Row>
           <Col xs="6">
-            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart} removeFromCart={this.removeFromCart} submitOrder={this.submitOrder} />
+            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart} removeFromCart={this.removeFromCart} />
           </Col>
           <Col xs="6">
-            <OrderForm orderItems={this.state.orderItems} subtotal={this.state.subtotal} />
+            <OrderForm orderItems={this.state.orderItems} subtotal={this.state.subtotal} submitOrder={this.submitOrder} />
 
             <ContactForm />
           </Col>

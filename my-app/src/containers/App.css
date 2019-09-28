@@ -46,6 +46,10 @@ ul {
   list-style: none;
 }
 
-li.menu-item-name {
+.menu-item-name {
   font-size: 22px;
+}
+
+tr {
+  width: 100%;
 }

@@ -31,6 +31,7 @@ class MenuList extends Component {
             <li className="menu-item-name">{item.name}</li>
             <li>{item.description}</li>
             <li><button onClick={() => this.props.addToCart(item)}>Add To Order</button></li>
+            <li><button onClick={() => this.props.removeFromCart(item)}>Remove From Order</button></li>
           </ul>
         </td>
         <td>${item.price}</td>

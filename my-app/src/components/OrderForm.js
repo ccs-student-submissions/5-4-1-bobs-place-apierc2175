@@ -24,10 +24,12 @@ class OrderForm extends Component {
         <h1>{item.price}</h1>
       </div>
     ));
+
     return (
       <section className="order-form">
         <h2>Order Form</h2>
         {orderItems}
+        <p>{this.props.subtotal}</p>
       </section>
     )
   }

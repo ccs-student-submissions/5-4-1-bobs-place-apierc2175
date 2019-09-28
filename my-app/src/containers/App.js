@@ -17,6 +17,7 @@ class App extends Component {
       subtotal: 0
     }
     this.addToCart = this.addToCart.bind(this);
+    this.removeFromCart = this.removeFromCart.bind(this);
   }
 
   componentDidMount() {
@@ -34,6 +35,16 @@ class App extends Component {
     }));
   }
 
+  removeFromCart(item) {
+    let items = [...this.state.orderItems];
+    let index = items.indexOf(item);
+    items.splice(index, 1);
+    this.setState((prevState, props) => ({
+      orderItems: items,
+      subtotal: prevState.subtotal - item.price
+    }));
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -41,10 +52,11 @@ class App extends Component {
           <h1 className="text-primary">Aidan's Place</h1>
         <Row>
           <Col xs="6">
-            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart}/>
+            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart} removeFromCart={this.removeFromCart}/>
           </Col>
           <Col xs="6">
-            <OrderForm orderItems={this.state.orderItems}/>
+            <OrderForm orderItems={this.state.orderItems} subtotal={this.state.subtotal} />
+
             <ContactForm />
           </Col>
         </Row>

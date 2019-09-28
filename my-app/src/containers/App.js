@@ -18,6 +18,7 @@ class App extends Component {
     }
     this.addToCart = this.addToCart.bind(this);
     this.removeFromCart = this.removeFromCart.bind(this);
+    this.submitOrder = this.submitOrder.bind(this);
   }
 
   componentDidMount() {
@@ -45,6 +46,10 @@ class App extends Component {
     }));
   }
 
+  submitOrder() {
+    alert("Thank you for your order! It has been submitted!");
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -52,7 +57,7 @@ class App extends Component {
           <h1 className="text-primary">Aidan's Place</h1>
         <Row>
           <Col xs="6">
-            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart} removeFromCart={this.removeFromCart}/>
+            <MenuList menuItems={this.state.menuItems} addToCart={this.addToCart} removeFromCart={this.removeFromCart} submitOrder={this.submitOrder} />
           </Col>
           <Col xs="6">
             <OrderForm orderItems={this.state.orderItems} subtotal={this.state.subtotal} />

@@ -18,7 +18,7 @@ class OrderForm extends Component {
   render() {
 
     let orderItems = this.props.orderItems.map((item, index) => (
-    //<div key={index}>
+    <div key={index}>
       <tr>
         <td>
           <ul>
@@ -32,7 +32,7 @@ class OrderForm extends Component {
 
 
 
-      //</div>
+      </div>
     ));
 
     return (

@@ -17,7 +17,11 @@ class ContactForm extends Component {
   render() {
     return (
       <section className="contact-form">
-        <h2>Contact Form</h2>
+        <h2>Contact Aidan</h2>
+        <ul>
+          <li><p>Email: aidanwpierce@gmail.com</p></li>
+          <li><p>Github Username: apierc2175</p></li>
+        </ul>
       </section>
     )
   }

@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let menuItems = [{name: 'Coleslaw', description: 'here is a description', price: 2, }, {name: 'Menu Item Two', description: 'here is a description', price: 3}, {name: 'Menu Item Three', description: 'here is a description', price: 4}, {name: 'Menu Item four', description: 'here is a description', price: 2}];
+    let menuItems = [{name: 'Potato Salad', description: 'Yukon gold potatoes finely chopped and served with imported extra virgin olive oil, irish grassfed butter, mayo, and freshly picked chives and basil', price: 3}, {name: 'Fruit Salad', description: 'A seaonal assortment of our homegrown fruits', price: 5}, {name: 'Bison Filet Mignon', description: '12 ounces of bison filet served with mashed potatoes', price: 28}, {name: 'Rainbow Trout', description: 'Fresh wild caught rainbow trout served with gnocci and brussel sprouts', price: 18}, {name: 'Lobster Sandwich', description: '8 ounces of fresh lobster, caught this morning, served on our homemade sourdough with a generous serving of mayo', price: 14}, {name: 'Turkey On Rye', description: 'Turkey, provolone, mayo, dijon mustard, kale, sliced tomatoes, and raw honey on rye bread', price: 12}, {name: 'BLT Pimento', description: 'Uncured bacon, lettuce, tomato, extra virgin olive oil, grassfed irish butter, and our secret spice blend on sourdough', price: 11}, {name: 'Beverages', description: 'Komboucha(ginger, berry, or honey flavored), Water(Fiji or Voss), or Fresh pressed juice of the day', price: 5}]
     this.setState({menuItems: menuItems});
   }
 

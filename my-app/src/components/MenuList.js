@@ -28,13 +28,13 @@ class MenuList extends Component {
       <tr>
         <td>
           <ul>
-            <li className="menu-item-name">{item.name}</li>
-            <li>{item.description}</li>
-            <li><button onClick={() => this.props.addToCart(item)}>Add To Order</button></li>
-            <li><button onClick={() => this.props.removeFromCart(item)}>Remove From Order</button></li>
+            <li className="menu-item-name"><h2>{item.name}</h2></li>
+            <li><p>{item.description}</p></li>
+            <li><button className="btn btn-success" onClick={() => this.props.addToCart(item)}>Add To Order</button></li>
+            <li><button className="btn btn-danger" onClick={() => this.props.removeFromCart(item)}>Remove From Order</button></li>
           </ul>
         </td>
-        <td>${item.price}.00</td>
+        <td><p>${item.price}.00</p></td>
       </tr>
     ))
     return (

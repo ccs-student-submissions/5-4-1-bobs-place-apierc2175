@@ -22,11 +22,11 @@ class OrderForm extends Component {
       <tr>
         <td>
           <ul>
-            <li className="menu-item-name">{item.name}</li>
-            <li>{item.description}</li>
+            <li className="menu-item-name"><h2>{item.name}</h2></li>
+            <li><p>{item.description}</p></li>
           </ul>
         </td>
-        <td>${item.price}</td>
+        <td><p>${item.price}</p></td>
       </tr>
       </div>
     ));
@@ -39,7 +39,7 @@ class OrderForm extends Component {
             {orderItems}
           </tbody>
         </Table>
-        <p>${this.props.subtotal}.00</p>
+        <p>Total Price ${this.props.subtotal}.00</p>
         <a href="#"><button className="btn btn-primary sub-btn" onClick={() => this.props.submitOrder()}>Submit Order</button></a>
       </section>
     )

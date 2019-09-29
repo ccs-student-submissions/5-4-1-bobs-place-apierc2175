@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .App {
   text-align: center;
 }
@@ -21,7 +24,25 @@
   color: #09d3ac;
 }
 
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  padding: 10px;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1.place-name {
+  color: #fff;
+}
+
 section {
+  padding: 5px;
+  margin: 3px;
 }
 
 section.order-form {
@@ -61,10 +82,23 @@ button.sub-btn {
   margin-right: auto;
 }
 
+header {
+  border-bottom: solid 2px #fff;
+  margin: 10px;
+}
+
 body {
   background-color: #333;
 }
 
+p {
+  margin: 5px;
+}
+
 :hover {
   text-decoration: none !important;
+}
+
+button {
+  margin: 5px;
 }

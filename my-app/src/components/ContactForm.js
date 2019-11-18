@@ -19,8 +19,7 @@ class ContactForm extends Component {
       <section className="contact-form">
         <h2>Contact Aidan</h2>
         <ul>
-          <li><p>Email: aidanwpierce@gmail.com</p></li>
-          <li><p>Github Username: apierc2175</p></li>
+          <li><p>Email: aidanpierce98@gmail.com</p></li>
         </ul>
       </section>
     )

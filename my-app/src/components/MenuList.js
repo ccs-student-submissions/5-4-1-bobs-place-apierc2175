@@ -4,15 +4,15 @@ import OrderForm from './OrderForm';
 import { Row, Col, Grid, Container, Table } from 'react-bootstrap';
 class MenuList extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      name: '',
-      description: '',
-      price: ''
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //
+  //   this.state = {
+  //     name: '',
+  //     description: '',
+  //     price: ''
+  //   };
+  // }
 
   // addItem(item) {
   //   // console.log(image);
